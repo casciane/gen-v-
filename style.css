@@ -1,0 +1,91 @@
+@charset "utf-8";
+@font-face {
+    font-family:font1;
+ src: url(INFECTED.ttf);
+     }
+     h1{
+        font-family: font1;
+        font-size: 3.1em;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+
+    }
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #a09c9c;
+}
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    /*  position: absolute; torna possivel alrerar a posição do container  */
+   position:absolute;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%,-50%); /*alterar a posição do eixo */
+    
+}
+.navegacao{
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    background-color:#f7e701c2 ;
+    width: 30px;
+    height: 6px;
+    margin: 6px;
+    transition: .3s;
+    cursor: pointer;
+}
+ input{
+    display: none;
+ }
+ .imagens{
+    display: flex;
+
+    width: 600%;
+    height: 100%;
+ }
+ .imagem{
+    width:16.6666666667%;
+    transition:.5s;
+ }
+ .imagem img{
+    width:100%;
+    height: 100%;
+ }
+#imagem1:checked~.img1{
+   margin-left: 0%;
+}
+#imagem2:checked~.img1{
+margin-left:-16.6666666668%;
+}
+#imagem3:checked~.img1{
+    margin-left: -33.3333333333%;
+}
+#imagem4:checked~.img1{
+    margin-left:-50%;
+}
+#imagem5:checked~.img1{
+    margin-left:-66.6666666667%;
+}
+#imagem6:checked~.img1{
+    margin-left:-83.3333333333%;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left:50%;
+
+transform: translate(-50%);
+}
+
